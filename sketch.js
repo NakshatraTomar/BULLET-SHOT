@@ -12,7 +12,7 @@ bullet.velocityX = speed;
 bullet.shapeColor = color(255);
 
 wall = createSprite(1500,200,60,height/2);
-wall.shapeColor = color("yellow");
+wall.shapeColor = color("white");
 
 }
 
@@ -24,15 +24,15 @@ var deformation=0.5 * weight * speed * speed/22509;
  
 if(deformation=180)
 {
- bullet.shapeColor=color(255,0,0);
+ wall.shapeColor=color(255,0,0);
 }
 if(deformation < 180 && deformation >100)
 {
-  bullet.shapeColor = color(230,230,0);
+  wall.shapeColor = color(230,230,0);
 }
 if(deformation < 100);
 {
-  bullet.shapeColor = color(0,255,0);
+  wall.shapeColor = color(0,255,0);
 }
 }
 drawSprites();
